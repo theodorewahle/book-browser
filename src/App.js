@@ -42,7 +42,7 @@ class App extends Component {
   handleKeyPress = (e) => {
     if (e.key === 'Enter') {
       this.handleSubmitQuery();
-    } 
+    }
   }
 
   clearApp = () => {
@@ -56,7 +56,7 @@ class App extends Component {
         q: input,
         orderBy: 'relevance',
         maxResults: 20,
-        fields: 'totalItems,items(volumeInfo(title,authors,imageLinks/thumbnail,infoLink,publisher))' 
+        fields: 'totalItems,items(volumeInfo(title,authors,imageLinks/thumbnail,infoLink,publisher))'
       }
     })
     .then((res) => {
@@ -78,19 +78,19 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className='app-title'>Book Finder</h1>
-        <input 
+        <input
           id='query-input'
-          type='search' 
-          name='input' 
-          value={input} 
+          type='search'
+          name='input'
+          value={input}
           placeholder='Search by book title or author...'
-          onChange={(e) => {this.handleUserInput(e)}} 
+          onChange={(e) => {this.handleUserInput(e)}}
           onKeyDown={(e) => {this.handleKeyPress(e)}}
         />
-        <button 
+        <button
           className='query-btn'
-          type='button'  
-          onClick={(e) => {this.handleSubmitQuery(e)}} 
+          type='button'
+          onClick={(e) => {this.handleSubmitQuery(e)}}
         >
           Search
         </button>

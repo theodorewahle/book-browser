@@ -1,6 +1,7 @@
 import React from 'react';
 import './BookCards.scss';
 
+
 const BookCards = ({ volumeInfo }) => {
   const { title, authors, imageLinks, infoLink, publisher } = volumeInfo;
   let thumbnailImg = imageLinks ? imageLinks.thumbnail : require('../assets/book_placeholder.png');
@@ -17,10 +18,10 @@ const BookCards = ({ volumeInfo }) => {
           <h3 className='book-card--subtext'>{`Published By: ${publisherText}`}</h3>
         </div>
         <div className='book-card--btn'>
-          <a 
-            href={infoLink} 
-            target='_blank' 
-            rel="noopener noreferrer" 
+          <a
+            href={infoLink}
+            target='_blank'
+            rel="noopener noreferrer"
             className='book-card--link'
           >
             See this Book

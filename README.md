@@ -1,5 +1,5 @@
 ![gif](http://g.recordit.co/HzvDCcOXoD.gif)
-# Google Books API Project for 8th Light
+# Google Books API Project
 
 ## Project Requirements
 - Create an application that allows you to use the Google Books API to search for books
@@ -29,10 +29,10 @@
 - Proper README
 
 ## Getting Started
-Navigate to the google-books-api repo on your local machine:
+Navigate to the book-browser repo on your local machine:
 ```
-git clone https://github.com/serpient/google-books-api.git
-git remote add upstream https://github.com/serpient/google-books-api.git
+git clone https://github.com/theodorewahle/book-browser.git
+git remote add upstream https://github.com/theodorewahle/book-browser.git
 npm install
 npm start
 ```
