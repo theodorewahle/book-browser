@@ -64,3 +64,8 @@ heroku open
 [Create-React-App / Heroku Deployment](https://blog.heroku.com/deploying-react-with-zero-configuration)
 [Create-React-App / Heroku Deployment ALT](https://github.com/mars/create-react-app-buildpack)
 [Link To Deployed Site](https://quiet-brushlands-15098.herokuapp.com/)
+
+
+### Credit Contributions
+
+This is based on a similar project done by @serpient.
